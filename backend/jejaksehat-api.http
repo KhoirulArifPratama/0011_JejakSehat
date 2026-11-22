@@ -1,0 +1,70 @@
+### Health check
+GET http://localhost:3000/api/health
+
+### Register Pasien
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "nama": "Budi Sehat",
+  "email": "budi@example.com",
+  "password": "Budi12345"
+}
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "budi@example.com",
+  "password": "Budi12345"
+}
+
+### Profil - ganti TOKEN
+GET http://localhost:3000/api/auth/me
+Authorization: Bearer TOKEN
+
+### Daftar anggota
+GET http://localhost:3000/api/anggota?q=
+Authorization: Bearer TOKEN
+
+### Tambah anggota
+POST http://localhost:3000/api/anggota
+Authorization: Bearer TOKEN
+Content-Type: application/json
+
+{
+  "nama_lengkap": "Siti Sehat",
+  "hubungan": "ANAK",
+  "golongan_darah": "O",
+  "tinggi_cm": 120,
+  "berat_kg": 25
+}
+
+### Daftar faskes
+GET http://localhost:3000/api/faskes?q=
+Authorization: Bearer TOKEN
+
+### Tambah riwayat alergi
+POST http://localhost:3000/api/riwayat
+Authorization: Bearer TOKEN
+Content-Type: application/json
+
+{
+  "anggota_id": 1,
+  "kategori": "ALERGI",
+  "nama": "Debu",
+  "tingkat_keparahan": "RINGAN"
+}
+
+### Tambah kunjungan
+POST http://localhost:3000/api/kunjungan
+Authorization: Bearer TOKEN
+Content-Type: application/json
+
+{
+  "anggota_id": 1,
+  "faskes_id": 1,
+  "tanggal_kunjungan": "2026-11-01",
+  "keluhan": "Demam"
+}
