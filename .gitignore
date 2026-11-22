@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+
+# Node.js dependencies and environment files
+backend/node_modules/
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Build and generated output
+*.log
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
