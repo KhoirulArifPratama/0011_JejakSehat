@@ -16,6 +16,7 @@ Week 2 melanjutkan fondasi dengan fokus pada dokumentasi API, konfigurasi lingku
 - [x] Konfigurasi environment backend terdokumentasi
 - [x] Kontrak endpoint API terdokumentasi
 - [x] Validasi input dan pengujian diperkuat
+- [x] Konfigurasi Android emulator dan `adb reverse` dijelaskan
 - [ ] Integrasi penuh sinkronisasi data Android–backend
 - [ ] Pengujian end-to-end dengan MySQL aktif
 
