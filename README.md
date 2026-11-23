@@ -2,6 +2,23 @@
 
 Aplikasi Android Jetpack Compose untuk mengelola rekam medis keluarga.
 
+## Roadmap Per Minggu
+
+### Week 1 — Fondasi Project
+
+Week 1 menyiapkan struktur Android, backend Express, skema database awal, autentikasi JWT, serta dokumentasi kontribusi.
+
+### Week 2 — Penguatan dan Integrasi
+
+Week 2 melanjutkan fondasi dengan fokus pada dokumentasi API, konfigurasi lingkungan yang aman, validasi data, pengujian, dan kesiapan integrasi Android–backend.
+
+- [x] Penataan roadmap dan status implementasi
+- [x] Konfigurasi environment backend terdokumentasi
+- [x] Kontrak endpoint API terdokumentasi
+- [x] Validasi input dan pengujian diperkuat
+- [ ] Integrasi penuh sinkronisasi data Android–backend
+- [ ] Pengujian end-to-end dengan MySQL aktif
+
 ## Status Implementasi
 
 - [x] Jetpack Compose + Material 3
