@@ -4,7 +4,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class tototValidationTest {
+class ValidationTest {
     @Test fun validMemberFields() { assertTrue(Validation.name("Budi")); assertTrue(Validation.height("170")); assertTrue(Validation.weight("65")) }
     @Test fun invalidMemberRanges() { assertFalse(Validation.height("20")); assertFalse(Validation.height("300")); assertFalse(Validation.weight("0")) }
     @Test fun futureDateRejected() { assertFalse(Validation.dateNotFuture("2999-01-01")); assertTrue(Validation.dateNotFuture("2020-01-01")) }
