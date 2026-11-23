@@ -45,6 +45,15 @@ Week 2 melanjutkan fondasi dengan fokus pada dokumentasi API, konfigurasi lingku
 
 Buka folder ini di Android Studio, tunggu Gradle sync, kemudian jalankan `app` pada emulator Android API 26+.
 
+### Menjalankan Backend
+
+1. Salin `backend/.env.example` menjadi `backend/.env` dan isi kredensial MySQL serta secret JWT.
+2. Jalankan `backend/schema.sql` pada database MySQL.
+3. Jalankan `npm install`, `npm run seed:admin`, lalu `npm start` dari folder `backend/`.
+4. Gunakan `backend/API.md` sebagai referensi kontrak endpoint.
+
+Jangan commit file `.env`, password, token, atau dependency hasil instalasi.
+
 APK debug:
 
 `app/build/outputs/apk/debug/app-debug.apk`
