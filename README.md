@@ -2,6 +2,13 @@
 
 Aplikasi Android Jetpack Compose untuk mengelola rekam medis keluarga.
 
+## Struktur Project
+
+- `android-app/` — project Android Kotlin/Jetpack Compose.
+- `backend/` — REST API Node.js/Express dan skema MySQL.
+
+Android dan backend berada dalam satu repository, tetapi memiliki folder dan konfigurasi terpisah.
+
 ## Roadmap Per Minggu
 
 ### Week 1 — Fondasi Project
@@ -44,7 +51,7 @@ Week 2 melanjutkan fondasi dengan fokus pada dokumentasi API, konfigurasi lingku
 
 ## Menjalankan
 
-Buka folder ini di Android Studio, tunggu Gradle sync, kemudian jalankan `app` pada emulator Android API 26+.
+Buka folder `android-app/` di Android Studio, tunggu Gradle sync, kemudian jalankan modul `app` pada emulator Android API 26+.
 
 ### Menjalankan Backend
 
@@ -57,7 +64,7 @@ Jangan commit file `.env`, password, token, atau dependency hasil instalasi.
 
 APK debug:
 
-`app/build/outputs/apk/debug/app-debug.apk`
+`android-app/app/build/outputs/apk/debug/app-debug.apk`
 
 ## Akun Demo
 
